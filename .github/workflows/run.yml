@@ -48,4 +48,4 @@ jobs:
         -v "/var/run/dbus/system_bus_socket":"/var/run/dbus/system_bus_socket" \
         --privileged \
         --log-driver=none -a stdin -a stdout -a stderr \
-        monalisayoha /docker-colab-local:latest
+        biplobsd/docker-colab-local:latest
