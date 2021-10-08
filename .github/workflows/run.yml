@@ -50,4 +50,4 @@ jobs:
         -v $HOME/.cache/torch:/root/.cache/torch \
         --privileged \
         --log-driver=none -a stdin -a stdout -a stderr \
-        biplobsd/docker-colab-local:11.2
+        monalisayoha/Dockerfile:11.2
