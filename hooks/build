@@ -4,7 +4,7 @@ set -x
 
 IFS=: read REPO_NAME REPO_TAG <<< "$IMAGE_NAME"
 
-for CUDA_VERSION in 10.1 10.2; do
+for CUDA_VERSION in 11.2 10.2; do
     docker build --build-arg CUDA_VERSION=$CUDA_VERSION -t $REPO_NAME:$CUDA_VERSION .
 done
 
