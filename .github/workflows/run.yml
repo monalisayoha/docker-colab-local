@@ -46,6 +46,6 @@ jobs:
         -v "/home/runner/content":"/content/downloads" \
         -v "/mnt":"/mnt" \
         -v "/var/run/dbus/system_bus_socket":"/var/run/dbus/system_bus_socket" \
-        --privileged \
-        --log-driver=none -a stdin -a stdout -a stderr \
+        -v "$PWD":/opt/colab \
+        -v $HOME/.cache/torch:/root/.cache/torch \
         monalisayoha/docker-colab-local:11.2
