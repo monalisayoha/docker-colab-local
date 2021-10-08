@@ -48,4 +48,6 @@ jobs:
         -v "/var/run/dbus/system_bus_socket":"/var/run/dbus/system_bus_socket" \
         -v "$PWD":/opt/colab \
         -v $HOME/.cache/torch:/root/.cache/torch \
-        monalisayoha/docker-colab-local:11.2
+        --privileged \
+        --log-driver=none -a stdin -a stdout -a stderr \
+        biplobsd/docker-colab-local:11.2
